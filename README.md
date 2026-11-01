@@ -3,6 +3,7 @@
 Keil MDK/uVision workbench for DeepSeek Harness (DSH). The model can inspect, build and flash an embedded project
 through one tool, a JSON CLI and a small HTTP API — with an optional sidebar panel for the human.
 
+[![test](https://github.com/wimi996123/dsh-keil/actions/workflows/test.yml/badge.svg)](https://github.com/wimi996123/dsh-keil/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) · English | [简体中文](README.zh-CN.md)
 
 ## The problem

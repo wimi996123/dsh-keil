@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Install, verify and repair (humans and AI agents)
+    url: https://github.com/wimi996123/dsh-keil/blob/main/AGENTS.md
+    about: The carrier-CLI vs plain-dsh install runbook, UV4 configuration and known failures.
+  - name: Architecture and design decisions
+    url: https://github.com/wimi996123/dsh-keil/blob/main/docs/ARCHITECTURE.md
+    about: How the Host/Client halves, the uvprojx editor and the build manager fit together.

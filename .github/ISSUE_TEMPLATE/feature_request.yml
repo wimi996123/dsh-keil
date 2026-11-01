@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose a capability for the Keil workbench or the agent workflow.
+title: "[feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Which step of the embed loop hurts today (select, build, flash, registration edit, reporting)?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should happen, ideally as the agent or the human would see it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds you use today, or why the obvious approach does not fit.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This stays inside the current design (project registration only; disk files are never deleted).
+        - label: This needs a new optional dependency or another DSH service.
+        - label: This is about non-Keil toolchains (arm-none-eabi, CMake, IAR, ...).

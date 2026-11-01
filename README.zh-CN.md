@@ -3,6 +3,7 @@
 DeepSeek Harness（DSH）的 Keil MDK/uVision 工作台。模型可以通过一个工具、一个 JSON CLI 和一个小型 HTTP API 查看、编译并烧录
 嵌入式工程；人类还可以选配一个侧边栏面板。
 
+[![test](https://github.com/wimi996123/dsh-keil/actions/workflows/test.yml/badge.svg)](https://github.com/wimi996123/dsh-keil/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) · [English](README.md) | 简体中文
 
 ## 要解决的问题

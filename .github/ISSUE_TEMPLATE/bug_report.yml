@@ -1,0 +1,57 @@
+name: Bug report
+description: Something broke while building, flashing or editing a Keil project.
+title: "[bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please run `dsh-keil doctor` first — its JSON answers most
+        environment questions in one shot (UV4 discovery, config paths, optional sidebar).
+        Redact anything you do not want to share.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Selected project `...` in the Keil panel
+        2. Called tool action `build`
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `dsh-keil doctor`
+      description: Run it in the profile's `node_modules/.bin` (or inside DSH). JSON only.
+      render: json
+  - type: textarea
+    id: logs
+    attributes:
+      label: Build/download log tail
+      description: Only for build or download failures. The full log path is in the action result.
+      render: text
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, DSH version, Keil MDK version, and whether dsh-better-sidebar is installed.
+      placeholder: "Windows 11 23H2 · DSH 0.2.1-rc.5 · Keil MDK 5.38 · dsh-better-sidebar 0.28.2"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and the troubleshooting section of the README.
+          required: true
+        - label: I did not commit or paste a machine-specific UV4/Keil path into the repo.
+          required: true
