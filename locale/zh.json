@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Keil 工程工作台",
+    "description": "DSH 的 Keil MDK/uVision 工作台：由用户选择 .uvprojx，提供增量/全量编译、烧录下载、工程树文件登记与头文件路径增删，并带模型可用的 CLI。"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Keil Workbench",
+    "description": "A Keil MDK/uVision workbench for DSH: user-selected .uvprojx, incremental/full build, flash download, project-tree file registration and include-path editing, plus a model-facing CLI."
+  }
+}

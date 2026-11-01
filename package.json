@@ -1,0 +1,67 @@
+{
+  "name": "dsh-keil",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Keil MDK/uVision workbench for DSH: let the model inspect, build and flash embedded projects, with an optional sidebar panel.",
+  "license": "MIT",
+  "author": "dsh-keil contributors",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "keil",
+    "uvision",
+    "mdk",
+    "uvprojx",
+    "embedded",
+    "firmware",
+    "arm",
+    "cortex-m",
+    "agent"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/index.js",
+    "./cli": "./bin/keil.mjs",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "bin": {
+    "dsh-keil": "./bin/keil.mjs"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/core.mjs",
+    "client/index.js",
+    "bin/keil.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "AGENTS.md",
+    "docs/*.md",
+    "scripts/install.mjs",
+    "LICENSE",
+    "test/core.test.mjs"
+  ],
+  "scripts": {
+    "test": "node --test test/core.test.mjs",
+    "check": "node --check lib/core.mjs && node --check lib/index.js && node --check client/index.js && node --check bin/keil.mjs",
+    "doctor": "node bin/keil.mjs doctor"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "icon": "./icon.svg"
+}

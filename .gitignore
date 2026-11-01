@@ -1,0 +1,24 @@
+# Dependencies and build output
+node_modules/
+dist/
+packages/*.tgz
+
+# Machine-local DSH state written by the plugin (never commit)
+state.json
+backup-*/
+*.log
+
+# Legacy Python keil-tool (not tracked in this repository)
+keil-tool/
+**/__pycache__/
+**/*.pyc
+*.uvprojx.*.bak
+build_logs/
+output/
+uvprojxhistory/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
