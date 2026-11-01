@@ -259,7 +259,7 @@ dsh-keil/
 
 ## License and lineage
 
-MIT — see [LICENSE](LICENSE). Copyright (c) 2026 dsh-keil contributors.
+MIT — see [LICENSE](LICENSE). Copyright (c) 2026 wimi996123.
 
 The operation set (group/file registration, include paths, UV4 build and download, strict uvprojx editing) is a
 Node.js rewrite of an earlier Python `keil-tool` whose behaviour it reproduces: same relative-path resolution, same

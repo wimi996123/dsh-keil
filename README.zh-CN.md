@@ -246,7 +246,7 @@ dsh-keil/
 
 ## 许可证与沿革
 
-MIT——见 [LICENSE](LICENSE)。Copyright (c) 2026 dsh-keil contributors。
+MIT——见 [LICENSE](LICENSE)。Copyright (c) 2026 wimi996123。
 
 这套操作集合（工程组/文件登记、头文件路径、UV4 编译与下载、严格的 uvprojx 编辑）是对早期 Python `keil-tool` 的 Node.js
 重写，并复现了它的行为：相同的相对路径解析、相同的 `FileType` 映射、相同的“先备份再原子写入”纪律。那个 Python 工具

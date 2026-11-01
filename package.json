@@ -4,7 +4,15 @@
   "type": "module",
   "description": "Keil MDK/uVision workbench for DSH: let the model inspect, build and flash embedded projects, with an optional sidebar panel.",
   "license": "MIT",
-  "author": "dsh-keil contributors",
+  "author": "wimi996123",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wimi996123/dsh-keil.git"
+  },
+  "homepage": "https://github.com/wimi996123/dsh-keil#readme",
+  "bugs": {
+    "url": "https://github.com/wimi996123/dsh-keil/issues"
+  },
   "keywords": [
     "dsh",
     "dsh-plugin",
